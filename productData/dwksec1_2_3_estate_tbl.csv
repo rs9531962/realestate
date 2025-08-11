@@ -1,0 +1,4 @@
+Sno,City,Product_Type,Product_Id,Product_Name,Description,Demand,Sector,Location,Img1,Img2,Img3,Img4,Vid1,Product_Ack_Id,Preference,Entry_Date_Time,udf1,udf2,udf3
+0,DELHI,LAND,555582,100 gaj LAND,100 gaj LAND,80 L,1,DWARKA_SECTOR_1_2_3,productImages/555582/1.png,,,,,SEC_1_2_3-555582,0,42:41.2,0,,
+0,DELHI,PLOT,494438,200 GAJ PLOT,200 GAJ PLOT,1.2 Cr,,DWARKA_SECTOR_1_2_3,productImages/494438/2.png,,,,,SEC_1_2_3-494438,0,45:22.1,0,,
+0,DELHI,FLAT,172471,4 BHK Flat,4 BHK Flat,45 L,3,DWARKA_SECTOR_1_2_3,productImages/172471/3.png,,,,,SEC_1_2_3-172471,0,57:32.8,0,,
