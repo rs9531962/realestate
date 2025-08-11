@@ -1,0 +1,129 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 0 0 0;
+  height: 100vh;
+}
+.header-img {
+  width: 150%;
+  align-self: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+.content-main h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.content-main button {
+  background: #000;
+  color: #fff;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+
+.content-main p {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .content-main h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .content-main p {
+    font-size: 0.8rem;
+  }
+  .content-main button {
+    font-size: 0.8rem;
+    width: 150px;
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.attribute-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.attribute {
+  background-color: #f8f8f8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .attribute-box {
+    justify-content: center;
+  }
+}
+
+
+/*  */
+
+.fixed-attributes-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.fixed-attributes-box span {
+  font-size: 14px;
+  color: #333;
+}
+
+
+/*  */
+
+.sticky-box {
+  position: sticky;
+  top: 80px; /* Adjust this value based on the height of your logo */
+  z-index: 1000;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attribute {
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
