@@ -26,8 +26,8 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getVEG();
-    getDPB();
+    // getVEG();
+    // getDPB();
     sector1_2_3_estate_tbl();
     rajnagar_estate_tbl();
   }, [setVegProduct,setDairyProduct,setJsonArrayRN,setJsonArraySEC123])
@@ -44,6 +44,8 @@ const Home = () => {
     }
   }
 
+  // const url = "https://rs9531962.github.io/realestate";
+  const url = "https://github.com/rs9531962/realestate/tree/master/public/productData/csv";
   async function getDPB() {
     try {
       const res = await axios.get(window.$urlpath2 + 'getDairyProduct')
@@ -59,7 +61,7 @@ const Home = () => {
   async function sector1_2_3_estate_tbl() {
     try {
 
-      fetch('/productData/dwksec1_2_3_estate_tbl.csv')
+      fetch(url+'/dwksec1_2_3_estate_tbl.csv')
       .then(response => response.text())
       .then(csvText => {
         const json = csvToJson(csvText);
@@ -80,7 +82,7 @@ const Home = () => {
   async function rajnagar_estate_tbl() {
     try {
 
-      fetch('/productData/rajnagar_estate_tbl.csv')
+      fetch(url+'/rajnagar_estate_tbl.csv')
       .then(response => response.text())
       .then(csvText => {
         const json = csvToJson(csvText);
